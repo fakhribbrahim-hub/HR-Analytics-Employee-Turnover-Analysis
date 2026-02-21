@@ -107,10 +107,12 @@ CALCULATE (
 ### Turnover Rate (%)
 ```DAX
 Turnover Rate (%) =
-Divide(
-[Terminated Employees]/[Total Employees])
+DIVIDE(
+    [Terminated Employees],
+    [Active Employees]
+)
 ```
-### Average Tenure of Active Employees (Hired in Period)
+### Avg Tenure – Active Employees
 ```DAX
 Average Tenure (Years) = 
 VAR StartDate = MIN(DimDate[Date])
